@@ -18,10 +18,10 @@ for x in range(2,n+1):
 ex 3
 
 numero = int(input("Digite um número: "))
-contador = 0
+cont = 0
 x = 1
-while contador < numero:
-    print(contador)
+while cont < numero:
+    print(cont)
     contador = x * x
     x = x + 1
 ##########################
@@ -132,7 +132,6 @@ while outroAluno != "NÃO":
         mediaTurma = nota / totalAlunos
         print("Média da turma: ",mediaTurma)
 ##############################################################################
-
 ############################################
 número de digites de um número inteiro
 
