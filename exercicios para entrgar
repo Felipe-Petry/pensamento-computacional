@@ -1,0 +1,145 @@
+Fibonacchi
+
+n1 = 0
+n2 = 1
+for n in range(3,12):
+    resultado = primeiro + segundo
+    print(resultado)
+    primeiro = segundo
+    segundo = resultado
+###########################
+Ex 2
+
+numero = int(input("Digite um número: "))
+for x in range(2,n+1):
+    if n %x == 0:
+        print(x)
+##########################
+ex 3
+
+numero = int(input("Digite um número: "))
+contador = 0
+x = 1
+while contador < numero:
+    print(contador)
+    contador = x * x
+    x = x + 1
+##########################
+ex 4 Números positivos divisiveis por 10
+
+numero = int(input("Digite um número: "))
+x = 10
+while x < numero:
+    if x %10 == 0:
+        print(x)
+        x = x + 10
+##############################
+ex 5 Caixa registradora rudimentar // valor dos produtos separadamente ??
+
+total = 0
+dinheiroCliente = 0
+troco = 0
+compra = -1
+while compra != 0:
+    print("1 - Compra")
+    print("0 - Finalizar a compra e calcular troco conforme o valor dado pelo cliente")
+    compra = int(input("Digite a opção: "))
+    if compra == 1:
+        total = total + total
+        total = float(input("Digite o valor da compra: "))
+    elif compra == 0:
+        print("Valor a ser pago: ",total)
+        dinheiroCliente = float(input("Digite o valor que o cliente deseja utilizar para pagar: "))
+        if dinheiroCliente >= total:
+            troco = dinheiroCliente - total
+            print("Valor total da compra: ",total)
+            print("Dinheiro dado pelo cliente: ",dinheiroCliente)
+            print("Troco: ",troco)
+        else:
+            print("Valor insuficiente para realizar a compra")
+###############################################################################
+ex 6 Aumento salarial
+
+salario = float(input("Digite o salário inicial do funcionário: "))
+ano = 1996
+aumento = 1.5
+while ano < 2023:
+    aumento = aumento * 2
+    ano = ano + 1
+salario = salario * aumento
+print("Salário em 2023: ",salario)
+###############################################################
+EX 7 Notas    //    maior e menor nota ????????
+
+nota = 0
+totalAlunos = 0
+outroAluno = 0
+while outroAluno != "NÃO":
+    resposta1 = input("Sua resposta da 1: ").upper()
+    resposta2 = input("Sua resposta da 2: ").upper()
+    resposta3 = input("Sua resposta da 3: ").upper()
+    resposta4 = input("Sua resposta da 4: ").upper()
+    resposta5 = input("Sua resposta da 5: ").upper()
+    resposta6 = input("Sua resposta da 6: ").upper()
+    resposta7 = input("Sua resposta da 7: ").upper()
+    resposta8 = input("Sua resposta da 8: ").upper()
+    resposta9 = input("Sua resposta da 9: ").upper()
+    resposta10 = input("Sua resposta da 10: ").upper()
+    if resposta1 == "A":
+        nota = nota + 1
+    else:
+        nota = nota + 0
+    if resposta2 == "B":
+        nota = nota + 1
+    else:
+        nota = nota + 0
+    if resposta3 == "C":
+        nota = nota + 1
+    else:
+        nota = nota + 0
+    if resposta4 == "D":
+        nota = nota + 1
+    else:
+        nota = nota + 0
+    if resposta5 == "E":
+        nota = nota + 1
+    else:
+        nota = nota + 0
+    if resposta6 == "E":
+        nota = nota + 1
+    else:
+        nota = nota + 0
+    if resposta7 == "D":
+        nota = nota + 1
+    else:
+        nota = nota + 0
+    if resposta8 == "C":
+        nota = nota + 1
+    else:
+        nota = nota + 0
+    if resposta9 == "B":
+        nota = nota + 1
+    else:
+        nota = nota + 0
+    if resposta10 == "A":
+        nota = nota + 1
+    else:
+        nota = nota + 0
+    outroAluno = input("Outro aluno irá utilizar o sistema ? ").upper()
+    totalAlunos = totalAlunos + 1
+    if outroAluno == "NÃO".upper():
+        print("Total de alunos que utilizaram o sistema: ",totalAlunos)
+        mediaTurma = nota / totalAlunos
+        print("Média da turma: ",mediaTurma)
+##############################################################################
+
+############################################
+número de digites de um número inteiro
+
+numero = int(input("Digite um número: "))
+soma = 0
+while numero > 0:
+    numero = numero // 10
+    soma = soma + 1
+print("A quantidade de digitos do número é: ",soma)
+############################################################################
