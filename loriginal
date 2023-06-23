@@ -1,0 +1,15 @@
+def c(lista,n,lista2):
+    for c in lista:
+        if c not in lista2:
+            lista.append(c)
+    print(lista2)
+
+
+
+def main():
+    lista = []
+    lista2 =[]
+    for x in range(5):
+        p = int(input("digite um numero"))
+        lista.append(p)
+main()
