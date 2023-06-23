@@ -1,0 +1,15 @@
+def z(lista,n,lista2):
+    for c in lista:
+        lista2.append(c(n))
+    print(lista2)
+
+
+
+
+def main():
+    lista = [("rodrigo",14), ("joao" , 25) , ("maria", 8)]
+    lista2 = []
+    n = 0
+    z = (lista,n,lista2)
+    z(lista,n,lista2)
+main()
