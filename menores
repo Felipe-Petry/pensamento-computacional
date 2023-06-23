@@ -1,0 +1,14 @@
+def encontrar_palavras_maiores(lista, n):
+    palavras_maiores = []
+    for palavra in lista:
+        if len(palavra) > n:
+            palavras_maiores.append(palavra)
+    return palavras_maiores
+
+def main():
+    lista = ["Rodrigo", "Maria", "João", "Zé"]
+    n = 3
+    palavras_maiores = encontrar_palavras_maiores(lista, n)
+    print(palavras_maiores)
+
+main()
